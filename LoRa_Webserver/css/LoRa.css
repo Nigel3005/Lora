@@ -1,0 +1,186 @@
+/*! css voor de dropdown */
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/*!de achtergrond in de body*/
+
+body{
+/*!    background-image: url("https://wallpaperaccess.com/full/1892789.jpg"); */
+    background-color: white;
+    margin-bottom: 10%;
+    height: 100%;
+    width: 100%;
+}
+
+/*! navigation bar (waar Home, About me, Contact enzv in staan */
+nav{
+    width: 100%;
+    height: 60px;
+    background-color: grey;
+    z-index: 1;
+    position: fixed;
+}
+
+/*! LoRa Webserver */
+nav p {
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+    background-color:grey;
+    font-size: 24px;
+    line-height: 60px;
+    float: left;
+    padding: 0em 2em;
+}
+
+/*! positie voor de text naast Pridelands (Home, Contact enzv.) */
+nav ul {
+    float: left;
+}
+
+/*! positie voor de text naast Pridelands (Home, About me, Contact enzv.) */
+nav ul li {
+    float: left;
+    list-style: none;
+    position: relative;
+}
+
+/*! de text naast Pridelands (Home, About me, Contact enzv.) */
+nav ul li a{
+    display: block;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    padding: 22px 14px;
+    text-decoration: none;
+    color: black;
+}
+
+a.active{
+    background-color: #333333;
+    color: white; 
+}
+
+/*! de text naast Pridelands (Home, About me, Contact enzv.) */
+nav ul li a:hover{
+    background-color: #333333;
+    color: white;
+    border-radius: 0em 0em 0em 0em;
+    transition: 0.25s;
+}
+
+/*! dit is in de dropdown */
+nav ul li ul{
+    display: none;
+    position: absolute;
+    background-color: grey;
+    padding: 0px;
+}
+
+nav ul li:hover ul{
+    display: block;
+    border-radius: 0em 0em 0em 0em;
+}
+
+/*!  */
+nav ul li ul li {
+    width: 120px;
+    border-radius: 20px;
+}
+
+/*! de tekst in de dropdown */
+nav ul li ul li a{
+    padding: 12px 14px;
+}
+
+/*! de tekst in de dropdown */
+nav ul li ul li a:hover	{
+    background-color: #333333;
+    color: white;
+    transition: 0.15s;
+    border-radius: 0em 0em 0em 0em;
+}
+
+main{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+div{
+    border-radius: 2px;
+    background-color: darkgrey;
+    box-shadow: 0px 0px 14px white;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    margin-left: 1%;
+    margin-right: 1%;
+    padding: 8px;
+    opacity: 0.88;
+}
+
+h2{
+    color: white;
+    background-color: black;
+    text-align: center;  
+}
+
+/*! dit is de plek waar de links in staan */
+p a{
+    color: white;
+    background-color: black;
+    border-radius: 2px;
+    box-shadow: 0px 0px 5px black;
+    font-size: 2em;
+}
+
+/*! dit is de hover over de links */
+p a:hover{
+    background-color: white;
+    transition: 0.25s;
+}
+
+/*! dit zijn de witte blokken om een naam, e-mail of text achter te laten. */
+textarea{
+    background-color: white;
+    border-radius: 2px;
+    box-shadow: 0px 0px 5px black;
+    width: 40em;
+    height: 8em;
+}
+
+/*! dit zijn de witte blokken om een naam, e-mail of text achter te laten. */
+input{
+    background-color: white;
+    border-radius: 2px;
+    box-shadow: 0px 0px 5px black;
+}
+
+footer{
+    background-color: black;
+    color: white;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 1.6em;
+}
+
+body h4{
+    margin-left: 10%;
+    margin-right: 40%;
+    margin-top: 0.5%;
+    text-align: justify;
+    padding: 10px;
+    color: rgb(0, 0, 0);
+    background-color: rgb(192, 192, 192);
+    border: black solid 1px;
+}
+
+body img{
+    float: right;
+    margin-right: 1%;
+    margin-top: 5%;
+    width: 39%;
+}
